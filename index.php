@@ -31,17 +31,17 @@ require_once __DIR__ . '/Models/Product.php';
                                 </div>
                                 <div class="card-body">
                                     <div class="title">
-                                        <?= $product->title ?>
+                                        <strong>TITLE:</strong> <?= $product->title ?>
                                     </div>
                                     <div class="details">
                                         <div class="price">
-                                            <?= $product->price ?> €
+                                            <strong>PRICE:</strong> <?= $product->price ?> €
                                         </div>
                                         <div class="category">
-                                            <?= $product->category ?>
+                                            <strong>CATEGORY:</strong> <?= $product->category ?>
                                         </div>
                                         <div class="type">
-                                            <?= $product->type ?>
+                                            <strong>TYPE:</strong> <?= $product->type ?>
                                         </div>
                                     </div>
                                 </div>
