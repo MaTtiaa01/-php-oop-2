@@ -16,7 +16,3 @@ class User
         $this->age = $age;
     }
 }
-
-$users = [];
-
-var_dump($users);

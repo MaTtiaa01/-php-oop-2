@@ -16,3 +16,22 @@ class PremiumUser extends User
         return $this->discount;
     }
 }
+
+
+$users = [];
+
+if (isset($_GET["email"])) {
+    $email = $_GET["email"];
+    $password = $_GET["password"];
+    $name = $_GET["name"];
+    $lastname = $_GET["lastname"];
+    $age = $_GET["age"];
+
+
+    $newUser = new PremiumUser($name, $lastname, $age, 20, "premium", $password, $email);
+    array_push($users, $newUser);
+}
+
+
+
+var_dump($users);

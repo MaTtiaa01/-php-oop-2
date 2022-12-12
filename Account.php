@@ -1,21 +1,20 @@
 <?php
 
-require_once __DIR__ . '/Models/PremiumUser.php';
-require_once __DIR__ . '/Models/User.php';
+// require_once __DIR__ . '/Models/PremiumUser.php';
+// require_once __DIR__ . '/Models/User.php';
 
 
-if (isset($_GET["email"])) {
-    $email = $_GET["email"];
-    $password = $_GET["password"];
-    $name = $_GET["name"];
-    $lastname = $_GET["lastname"];
-    $age = $_GET["age"];
+// if (isset($_GET["email"])) {
+//     $email = $_GET["email"];
+//     $password = $_GET["password"];
+//     $name = $_GET["name"];
+//     $lastname = $_GET["lastname"];
+//     $age = $_GET["age"];
 
 
-    $newUser = new PremiumUser($name, $lastname, $age, 20, "premium", $password, $email);
-    array_push($users, $newUser);
-}
-
+//     $newUser = new PremiumUser($name, $lastname, $age, 20, "premium", $password, $email);
+//     array_push($users, $newUser);
+// }
 
 
 ?>
@@ -34,7 +33,7 @@ if (isset($_GET["email"])) {
 <body>
     <div class="container text-center my-5 border rounded-3 p-5 bg-dark text-white">
         <h1 class="text-uppercase my-3">sing up</h1>
-        <form action="./Account.php" method="post">
+        <form action="./Models/PremiumUser.php" method="post">
             <div>
                 <input type="email" name="email" id="email" helper="type an email" required="required">
                 <input type="date" name="age" id="age" required="required">
