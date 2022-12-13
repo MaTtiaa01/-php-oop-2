@@ -21,6 +21,8 @@ $products = [
     $ball
 ];
 
+var_dump($ball->get_weight());
+
 //######## 
 
 //User implementation
@@ -35,7 +37,6 @@ $user_1_basket->add($stick, 23);
 $user_1_basket->add($ball, 15);
 
 var_dump($user_1_basket->get_basket_array());
-
 
 
 
